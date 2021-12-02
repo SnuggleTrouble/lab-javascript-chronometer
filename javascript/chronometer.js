@@ -21,6 +21,10 @@ class Chronometer {
     return Math.floor(this.currentTime % 60);
   }
 
+  getMilliseconds() {
+    return Math.floor(this.currentTime * 100);
+  }
+
   computeTwoDigitNumber(value) {
     if (value < 10) {
       return `0${value}`;
